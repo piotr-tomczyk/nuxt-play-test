@@ -1,11 +1,14 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  $END$
+    <div>
+        <div v-if="bienvenidosData">
+            {{ bienvenidosData }}
+        </div>
+        <div v-else>
+            No data
+        </div>
+    </div>
 </template>
-
-<style scoped>
-
-</style>
+<script setup lang="ts">
+const { data: bienvenidosData } = useFetch('/api/bienvenidos');
+setPageLayout('custom')
+</script>

@@ -1,6 +1,8 @@
 <template>
     <header>
-        <h1>My Site</h1>
+        <NuxtLink to="/">
+            <h1 >My Site</h1>
+      </NuxtLink>
     </header>
 </template>
 
